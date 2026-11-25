@@ -4,6 +4,8 @@ import { Route, Routes, Link } from 'react-router-dom'
 import RegistrarEvento from './pages/RegistrarEvento.jsx'
 import RegistrarParticipante from './pages/RegistrarParticipante.jsx'
 import Eventos from './pages/Eventos.jsx'
+import DetalhesEventos from './components/DetalhesEvento.jsx';
+
 
 function Home() {
   return (
@@ -39,6 +41,7 @@ function App() {
           <Route path="/eventos/cadastro" element={<RegistrarEvento />} />
           <Route path="/participantes/cadastro" element={<RegistrarParticipante />} />
           <Route path="/eventos" element={<Eventos />} />
+          <Route path="/eventos/:id" element={<DetalhesEventos />}/>
         </Routes>
       </main>
       <Footer />
